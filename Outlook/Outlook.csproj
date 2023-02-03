@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Infragistics.WPF.OutlookBar.Trial" Version="22.2.19" />
+    <PackageReference Include="Infragistics.WPF.Ribbon.Trial" Version="22.2.19" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\PrismOutlook.Module.Calendar\PrismOutlook.Module.Calendar.csproj" />
+    <ProjectReference Include="..\Modules\PrismOutlook.Module.Contacts\PrismOutlook.Module.Contacts.csproj" />
+    <ProjectReference Include="..\PrismOutlook.Core\PrismOutlook.Core.csproj" />
+    <ProjectReference Include="..\PrismOutlook.Module.Mail\PrismOutlook.Module.Mail.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Region\" />
+  </ItemGroup>
+</Project>
